@@ -29,8 +29,8 @@ public class LoginPage extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(325, 500));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\krush\\OneDrive\\Desktop\\login icon.jpeg")); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Shrutikk\\OneDrive\\Desktop\\login image.jpg")); // NOI18N
+        jLabel1.setText("");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
