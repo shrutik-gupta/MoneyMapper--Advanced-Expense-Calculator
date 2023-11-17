@@ -1,0 +1,46 @@
+Database name - spendingdb
+
+mysql> show tables;
++----------------------+
+| Tables_in_spendingdb |
++----------------------+
+| budget               |
+| category_info        |
+| login_info           |
+| spendings            |
++----------------------+
+
+mysql> desc budget;
++-------------+------+------+-----+---------+----------------+
+| Field       | Type | Null | Key | Default | Extra          |
++-------------+------+------+-----+---------+----------------+
+| b_from_date | date | NO   |     | NULL    |                |
+| b_to_date   | date | NO   |     | NULL    |                |
+| b_amount    | int  | NO   |     | NULL    |                |
+| b_id        | int  | NO   | PRI | NULL    | auto_increment |
++-------------+------+------+-----+---------+----------------+
+
+mysql> desc category_info;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| category | varchar(50) | NO   | PRI | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+mysql> desc login_info;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| username | varchar(100) | NO   | PRI | NULL    |       |
+| password | varchar(100) | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+
+mysql> desc spendings;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| sid      | int         | NO   | PRI | NULL    | auto_increment |
+| category | varchar(50) | YES  |     | NULL    |                |
+| sdate    | date        | YES  |     | NULL    |                |
+| amount   | int         | YES  |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
